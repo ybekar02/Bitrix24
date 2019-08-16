@@ -1,0 +1,150 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 525687060,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the landing page",
+            "match": {
+              "location": "TasksPagesStepDefinitions.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2396373323,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "",
+        "description": "",
+        "id": "tasks-stream;",
+        "after": [
+          {
+            "result": {
+              "duration": 123073807,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2366716635,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user logs on under username \"hr5@cybertekschool.com\" and password \"UserUser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr5@cybertekschool.com\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"UserUser\"",
+                  "offset": 66
+                }
+              ],
+              "location": "TasksPagesStepDefinitions.user_logs_on_under_username_and_password(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4506593652,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user can create new task by clicking on tasks on activity stream",
+            "match": {
+              "location": "TasksPagesStepDefinitions.user_can_create_new_task_by_clicking_on_tasks_on_activity_stream()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7185527987,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user can upload a file and image or link or checklist regarding to new task",
+            "match": {
+              "location": "TasksPagesStepDefinitions.user_can_upload_a_file_and_image_or_link_or_checklist_regarding_to_new_task()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1168668181,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user should be able to set up a deadline for new task",
+            "match": {
+              "location": "TasksPagesStepDefinitions.user_should_be_able_to_set_up_a_deadline_for_new_task()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6088546457,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user submits the task",
+            "match": {
+              "location": "TasksPagesStepDefinitions.user_submits_the_task()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Tasks"
+          }
+        ]
+      }
+    ],
+    "name": "Tasks Stream",
+    "description": "  As a user I should be able to create a task from activity stream",
+    "id": "tasks-stream",
+    "keyword": "Feature",
+    "uri": "src/test/resources/tasksPages.feature",
+    "tags": [
+      {
+        "name": "@Tasks",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
