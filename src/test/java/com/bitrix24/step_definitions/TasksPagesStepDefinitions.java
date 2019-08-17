@@ -32,7 +32,6 @@ public class TasksPagesStepDefinitions {
         BrowserUtils.waitPlease(1);
         pages.tasksPage().bodyElement.sendKeys(body);
         Driver.getDriver().switchTo().parentFrame();
-
     }
 
     @Then("user can upload a file and image or link or checklist regarding to new task")
@@ -53,7 +52,6 @@ public class TasksPagesStepDefinitions {
         pages.tasksPage().saveElement.click();
         BrowserUtils.waitPlease(1);
 
-
     }
 
     @Then("user should be able to set up a deadline for new task")
@@ -71,29 +69,4 @@ public class TasksPagesStepDefinitions {
         BrowserUtils.waitPlease(5);
     }
 
-
 }
-
-/*
-
-Hello,
-        I have a question. I can not have the
-        system logon since it throws NullpPointerException.
-        All locator are correct, what is the wrong part here?
-
-        --> feature file
-        Then user logs on under username "hr5@cybertekschool.com" and password "UserUser"
-
-        ---> step_def
-          @Then("user logs on under username {string} and password {string}")
-          public void user_logs_on_under_username_and_password(String string, String string2) {
-          pages.loginPage().login(string, string2);
-
-          ---> Login method in login page
-           public void login(String username, String password) {
-           usernameElement.sendKeys(username);
-           passwordElement.sendKeys(password);
-           loginButtonElement.click();
-    }
-    }
- */
