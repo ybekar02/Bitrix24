@@ -1,0 +1,12 @@
+com/bitrix24/pages/NavigationMenuPage.class
+com/bitrix24/utilities/Driver.class
+com/bitrix24/step_definitions/NavigationMenuStepDefinitions.class
+com/bitrix24/pages/LoginPage.class
+com/bitrix24/step_definitions/Hook.class
+com/bitrix24/runners/CukesRunner.class
+com/bitrix24/step_definitions/TasksPagesStepDefinitions.class
+com/bitrix24/utilities/ConfigurationReader.class
+com/bitrix24/utilities/BrowserUtils.class
+com/bitrix24/pages/TasksPage.class
+com/bitrix24/utilities/Pages.class
+com/bitrix24/utilities/BrowserUtils$1.class
