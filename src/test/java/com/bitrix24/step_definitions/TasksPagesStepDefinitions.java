@@ -7,6 +7,9 @@ import com.bitrix24.utilities.Pages;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
+import java.util.List;
+import java.util.Map;
+
 
 public class TasksPagesStepDefinitions {
 
@@ -68,5 +71,39 @@ public class TasksPagesStepDefinitions {
         pages.tasksPage().saveButtonElement.click();
         BrowserUtils.waitPlease(5);
     }
+
+    //new roadmap
+    //user utilizes from data table as MAPS and LIST of Map
+    @Then("user can create new task by clicking on tasks")
+    public void user_can_create_new_task_by_clicking_on_tasks(Map<String, String> value) {
+        pages.tasksPage().taskElement.click();
+        BrowserUtils.waitPlease(2);
+        pages.tasksPage().thingsToDoElement.sendKeys(value.get("thingsToDo"));
+        BrowserUtils.waitPlease(2);
+        Driver.getDriver().switchTo().frame(pages.tasksPage().iframeElement);
+        BrowserUtils.waitPlease(2);
+        pages.tasksPage().bodyElement.sendKeys(value.get("bodyElement"));
+        Driver.getDriver().switchTo().parentFrame();
+
+    }
+
+    @Then("user can upload a file and image or link or checklist")
+    public void user_can_upload_a_file_and_image_or_link_or_checklist(List<Map<String, String>> values) {
+        for(Map<String, String> value : values){
+            pages.tasksPage().fileUploadElement.click();
+            BrowserUtils.waitPlease(2);
+            pages.tasksPage().uploadFileElement.sendKeys(value.get("uploadFileElement"));
+            pages.tasksPage().linkElement.click();
+            BrowserUtils.waitPlease(2);
+            pages.tasksPage().linkTextElement.sendKeys(value.get("linkTextElement"));
+            BrowserUtils.waitPlease(2);
+            pages.tasksPage().linkUrlElement.sendKeys("linkUrlElement");
+            BrowserUtils.waitPlease(2);
+            pages.tasksPage().saveElement.click();
+            BrowserUtils.waitPlease(2);
+        }
+    }
+
+
 
 }

@@ -34,7 +34,9 @@ public class LoginPage {
         String username = ConfigurationReader.getProperty("hrusername");
         String password = ConfigurationReader.getProperty("hrpassword");
         usernameElement.sendKeys(username);
+        BrowserUtils.waitPlease(2);
         passwordElement.sendKeys(password);
+        BrowserUtils.waitPlease(2);
         loginButtonElement.click();
     }
 

@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "html:target/default-cucumber-reports"
         },
-        //tags = {"@navigation"},
+        tags = {"@wip"},
         features = {"src/test/resources" //to specify where are the features
         },
         //feature contains scenarios
