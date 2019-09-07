@@ -31,7 +31,7 @@ Feature: Navigation Menu
       | Activity Stream  | Portal                           |
       | Tasks            | My tasks                         |
       | Chat and Calls   | Chat and Calls                   |
-      | Workgroups       | Workgroups and projects           |
+      | Workgroups       | Workgroups and projects          |
       | Drive            | My Drive                         |
       | Calendar         | hr5@cybertekschool.com: Calendar |
       | Mail             | Mailbox Integration              |

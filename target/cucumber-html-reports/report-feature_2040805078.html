@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
               <td>1</td>
-            <td>23 Aug 2019, 11:01</td>
+            <td>23 Aug 2019, 23:13</td>
     </tr>
   </tbody>
 </table>
@@ -130,19 +130,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Navigation Menu</td>
-          <td      class="passed"    >3</td>
-          <td >0</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="73146153530">1:13.146</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="29375678453">29.375</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -174,7 +174,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Navigation Menu</span>
   
@@ -192,7 +192,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">2.636</span>
+  <span class="lead-duration duration">3.747</span>
 
 
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -233,7 +233,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on the landing page</span>
   
-  <span class="lead-duration duration">0.537</span>
+  <span class="lead-duration duration">0.943</span>
 
 </div>
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user logs on under username <span class="argument">&quot;hr5@cybertekschool.com&quot;</span> and password <span class="argument">&quot;UserUser&quot;</span></span>
   
-  <span class="lead-duration duration">2.099</span>
+  <span class="lead-duration duration">2.803</span>
 
 </div>
 
@@ -296,12 +296,12 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">1:10.509</span>
+  <span class="lead-duration duration">25.627</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name"></span>
   
@@ -312,7 +312,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-element-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-4">
@@ -333,7 +333,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">Hook.setup(Scenario)</span>
                         
-  <span class="lead-duration duration">2.818</span>
+  <span class="lead-duration duration">4.271</span>
 
           </div>
 
@@ -351,9 +351,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -363,14 +363,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks on the module then verifies the title</span>
   
-  <span class="lead-duration duration">1:10.509</span>
+  <span class="lead-duration duration">25.627</span>
 
 </div>
 
@@ -378,15 +378,31 @@ $(document).ready(function() {
 
         
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.junit.ComparisonFailure:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.junit.ComparisonFailure: expected:&lt;[hr5@cybertekschool.com: Calendar]&gt; but was:&lt;[Authorization]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.bitrix24.step_definitions.NavigationMenuStepDefinitions.user_clicks_on_the_module_then_verifies_the_title(NavigationMenuStepDefinitions.java:33)
+	at &#10045;.user clicks on the module then verifies the title(src/test/resources/NavigationMenu.feature:30)
+</pre>
+      </div>
+    </div>
+  </div>
+
 
                   <table class="step-arguments">
                           <tr>
                                   <td>Activity Stream</td>
-                                  <td>Activity Stream</td>
+                                  <td>Portal</td>
                               </tr>
                           <tr>
                                   <td>Tasks</td>
-                                  <td>Tasks</td>
+                                  <td>My tasks</td>
                               </tr>
                           <tr>
                                   <td>Chat and Calls</td>
@@ -394,19 +410,19 @@ $(document).ready(function() {
                               </tr>
                           <tr>
                                   <td>Workgroups</td>
-                                  <td>Workgroups</td>
+                                  <td>Workgroups and projects</td>
                               </tr>
                           <tr>
                                   <td>Drive</td>
-                                  <td>Drive</td>
+                                  <td>My Drive</td>
                               </tr>
                           <tr>
                                   <td>Calendar</td>
-                                  <td>Calendar</td>
+                                  <td>hr5@cybertekschool.com: Calendar</td>
                               </tr>
                           <tr>
                                   <td>Mail</td>
-                                  <td>Mail</td>
+                                  <td>Mailbox Integration</td>
                               </tr>
                           <tr>
                                   <td>Contact Center</td>
@@ -414,15 +430,15 @@ $(document).ready(function() {
                               </tr>
                           <tr>
                                   <td>Time and Reports</td>
-                                  <td>Time and Reports</td>
+                                  <td>Absence Chart</td>
                               </tr>
                           <tr>
                                   <td>Employees</td>
-                                  <td>Employees</td>
+                                  <td>Company Structure</td>
                               </tr>
                           <tr>
                                   <td>Services</td>
-                                  <td>Services</td>
+                                  <td>Meeting Rooms</td>
                               </tr>
                           <tr>
                                   <td>Company</td>
@@ -445,7 +461,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -457,13 +473,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">Hook.teardown(Scenario)</span>
                         
-  <span class="lead-duration duration">0.114</span>
+  <span class="lead-duration duration">0.930</span>
 
           </div>
 
@@ -473,6 +489,21 @@ $(document).ready(function() {
                     
 
           
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-108364407.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-8" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-108364407.png">
+      </div>
+    </div>
+  </div>
+            </div>
   
         </div>
           </div>

@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.bitrix24.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 76.553 s - in com.bitrix24.runners.CukesRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 35.321 s <<< FAILURE! - in com.bitrix24.runners.CukesRunner
+EMPTY_NAME(Navigation Menu)  Time elapsed: 34.642 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[hr5@cybertekschool.com: Calendar]> but was:<[Authorization]>
+

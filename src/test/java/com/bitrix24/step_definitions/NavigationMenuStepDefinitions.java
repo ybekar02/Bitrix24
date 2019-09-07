@@ -21,7 +21,6 @@ public class NavigationMenuStepDefinitions {
         String actual = Driver.getDriver().getTitle();
         System.out.println(actual);
         Assert.assertEquals(actual, string2);
-
     }
 
     @Then("user clicks on the module then verifies the title")

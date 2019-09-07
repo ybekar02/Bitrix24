@@ -124,8 +124,10 @@ formatter.match({
   "location": "NavigationMenuStepDefinitions.user_clicks_on_the_module_then_verifies_the_title(String,String\u003e)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[hr5@cybertekschool.com: Calendar]\u003e but was:\u003c[Authorization]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat com.bitrix24.step_definitions.NavigationMenuStepDefinitions.user_clicks_on_the_module_then_verifies_the_title(NavigationMenuStepDefinitions.java:33)\n\tat ✽.user clicks on the module then verifies the title(src/test/resources/NavigationMenu.feature:30)\n",
+  "status": "failed"
 });
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
